@@ -11,4 +11,6 @@ public class DOFCalculator {
     public double getHFP(double aperture ){//Hyper Focal Point
         return (lens.getFocalLen() * lens.getFocalLen())/(aperture*COC);
     }
+
+
 }

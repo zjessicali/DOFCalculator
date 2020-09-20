@@ -13,7 +13,7 @@ public class main {
             System.out.println("Lens is: " + lens);
         }
 
-        System.out.println("Lens index 0 is: " + testLenses(0));
+        //System.out.println("Lens index 0 is: " + testLenses(0));
 
 
     }
