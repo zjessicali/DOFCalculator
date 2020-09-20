@@ -18,11 +18,18 @@ public class textUI {
     public void show(){
         boolean isDone = false;
         while(!isDone){
-            System.out.println("Lenses to pick from:");
+            System.out.println("Lenses to pick from: ");
             //print manager
-            for(Lens lens : manager){
-                System.out.println();
+            for(int i = 0; i < manager.size();i++){
+                String iMake = manager.get(i).getMake();
+                int iFocalLen = manager.get(i).getFocalLen();
+                double iMaxAperture = manager.get(i).getMaxAperture();
+                System.out.println(i + ". " + iMake + " " +iFocalLen + "mm F" + iMaxAperture );
             }
+
+            System.out.println("(-1 to exit)");
+
+            isDone =true;
 
         }
     }

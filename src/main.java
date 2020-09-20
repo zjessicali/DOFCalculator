@@ -1,21 +1,20 @@
 import model.Lens;
 import model.LensManager;
+import textUI.textUI;
 
 
 public class main {
 
     public static void main(String args[]){
-        System.out.println("Testing lens and lens manager: ");
+        System.out.println("Testing the UI: ");
+        //create model
+        LensManager manager = new LensManager();
 
-        LensManager testLenses = new LensManager();
-        testLenses.add(new Lens( "Canon", 50, 1.8 ));
+        //create ui
+        textUI ui = new textUI(manager);
 
-        for(Lens lens : testLenses){
-            System.out.println("Lens is: " + lens);
-        }
-
-        System.out.println("Lens index 0 is: " + testLenses.get(0));
-
+        //launch
+        ui.show();
 
     }
 }
