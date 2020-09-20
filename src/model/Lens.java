@@ -23,7 +23,6 @@ public class Lens {
         return focalLen;
     }
 
-
     @Override
     public String toString() {
         return "Lens{" +

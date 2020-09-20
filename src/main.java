@@ -1,6 +1,7 @@
 import model.Lens;
 import model.LensManager;
 
+
 public class main {
 
     public static void main(String args[]){
@@ -13,7 +14,7 @@ public class main {
             System.out.println("Lens is: " + lens);
         }
 
-        //System.out.println("Lens index 0 is: " + testLenses(0));
+        System.out.println("Lens index 0 is: " + testLenses.get(0));
 
 
     }
