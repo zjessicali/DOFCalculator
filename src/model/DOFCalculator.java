@@ -12,7 +12,11 @@ public class DOFCalculator {
     }
 
     public static double calc_FFP(Lens lens, double distance, double HFP){
-        return (HFP * distance)/(HFP - (distance - lens.getFocalLen()));
+        double FFP = (HFP * distance) / (HFP - (distance - lens.getFocalLen()));
+        if(distance > FFP){
+            return Double.POSITIVE_INFINITY;
+        }
+        return FFP;
     }
 
     public static double calc_DOF(double NFP, double FFP){
