@@ -12,5 +12,4 @@ public class DOFCalculator {
         return (lens.getFocalLen() * lens.getFocalLen())/(aperture*COC);
     }
 
-
 }
