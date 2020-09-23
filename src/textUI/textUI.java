@@ -52,7 +52,7 @@ public class textUI {
                 double aperture = in.nextDouble();
                 //check max aperture
                 if(aperture < lens.getMaxAperture()){
-                    System.out.println("ERROR: This aperture is not possible with this lens");
+                    System.out.println("ERROR: This aperture is not possible with this lens\n");
                 }
                 //continue
                 else{
